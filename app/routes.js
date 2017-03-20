@@ -15,6 +15,24 @@ export default function createRoutes() {
 
   return [
      {
+    path: '/',
+    name: 'Home',
+    getComponent(nextState, cb) {
+      import('containers/Home')
+        .then(loadModule(cb))
+        .catch(errorLoading);
+    },
+  },
+  {
+      path: '/about',
+      name: 'About',
+      getComponent(nextState, cb) {
+        import('containers/About')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+     {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
@@ -23,5 +41,6 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     },
-  ];
+]
+
 }

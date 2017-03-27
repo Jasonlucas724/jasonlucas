@@ -12,7 +12,6 @@ class Main extends React.PureComponent {
     const main={
       width: "100%",
       height:"100vh",
-      background: "url(https://assets.rbl.ms/2326929/980x.jpg)",
       backgroundSize:"cover",
       display:"flex",
       flexDirection: "row",
@@ -48,7 +47,7 @@ class Main extends React.PureComponent {
       height:"150px",
       alignSelf:"center",
       textAlign: "center",
-      borderRadius:"20px 50%",
+      borderRadius:"0, auto",
 
     }
     const firstMobile={
@@ -65,7 +64,8 @@ class Main extends React.PureComponent {
       justifyContent:"center",
       width:"200px",
       margin:"0 auto",
-      color:"#ffffff"
+      color:"#000000",
+      fontSize:"12px"
 
 
     }
@@ -74,8 +74,9 @@ class Main extends React.PureComponent {
       height:"50px",
       alignSelf:"center",
       textAlign: "center",
-      color:"#ffffff",
-      fontFamily:"railway"
+      color:"#000000",
+      fontFamily:"Railway",
+      fontSize:"20px"
 
     }
     return (

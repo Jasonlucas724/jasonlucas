@@ -29,10 +29,10 @@ export default class About extends React.PureComponent {
 
     }
     const imgContainer={
-    weight:"200px",
-    height:"200px",
+    weight:"100px",
+    height:"100px",
     color:"#000000",
-    fontFamily:"roboto"
+    fontFamily:"Roboto"
 
     }
 
@@ -56,7 +56,6 @@ export default class About extends React.PureComponent {
       weight:"200px",
       height:"200px",
       color:"#000000",
-
       fontFamily:"railway"
     }
     const linkStyle={
@@ -64,9 +63,18 @@ export default class About extends React.PureComponent {
       flexDirection:"row",
       justifyContent:"space-between",
       color:"#777777"
-
-
     }
+    const listStyle={
+      listStyletype:"decimal"
+    }
+    const address={
+      marginTop:"28vh",
+      display:"flex",
+      flexDirection:"column",
+      /*bottom: "auto"*/
+    }
+
+
     return (
       <div>
         <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
@@ -77,20 +85,21 @@ export default class About extends React.PureComponent {
           <div style={main}>
             <h1>Please enjoy us for family fun.</h1>
           <h1 style={imgContainer}></h1>
+
+            <ul style={listStyle}>
+              <li>Enjoy the ocean</li>
+              <li>Shoping</li>
+              <li>Fishing</li>
+              <li>Water Park</li>
+            </ul>
           </div>
         </main>
 
       <footer>
-        <ul>
-          <li>Enjoy the ocean</li>
-          <li>Shoping</li>
-          <li>Fishing</li>
-          <li>Water Park</li>
-        </ul>
-        <address>
-         Infinite Loop,<br/>
-         Cupertino, CA<br/>
-         95014, USA
+        <address style={address}>
+         <div>Infinite Loop,</div>
+         <div>Cupertino, CA</div>
+         <div>95014, USA</div>
        </address>
       </footer>
     </div>

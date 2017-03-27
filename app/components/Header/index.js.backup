@@ -36,6 +36,7 @@ class Header extends React.PureComponent {
   showMenu = () => {
 
     const handleMenu={
+      width:"10px",
       height:"20px"
     }
     const nav= {
@@ -89,8 +90,6 @@ class Header extends React.PureComponent {
 
 
     const columnOne={
-      display:"flex",
-      flexDirection:"column",
       width:"20%"
 
     }
@@ -116,13 +115,11 @@ class Header extends React.PureComponent {
       <div>
          <header style={divstyle}>
            <div style={columnOne}>
-            <div><img style={logoStyle} src="http://logos-download.com/wp-content/uploads/2017/01/Perdido_Beach_Resort_logo.png"/></div>
-            <div><Menu onTouchTap={this.handleMenu}/></div>
+            <img style={logoStyle} src="http://logos-download.com/wp-content/uploads/2017/01/Perdido_Beach_Resort_logo.png"/>
            </div>
-
            <div style={columnTwo}>
              <TextField hintText="search" style={searchBar}/>
-
+             <Menu onTouchTap={this.handleMenu}/>
              <div style={navStyle}>
                <Link to="/" style={linkStyle}>Home</Link>
                <Link to="/about" style={linkStyle}>About</Link>

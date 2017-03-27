@@ -15,7 +15,11 @@ import Header from "components/Header";
 import Main from "components/Main";
 import Footer from "components/Footer";
 
+
+
+
 export default class Home extends React.PureComponent {
+
   render() {
 
 
@@ -26,16 +30,12 @@ export default class Home extends React.PureComponent {
 
 
 
+
            <Header/>
            <Main/>
-           <footer/>
-
-
-
-
-
-
+           <Footer/>
       </div>
+
     );
   }
 }
